@@ -23,7 +23,7 @@ create table chats (
     writer varchar(20),
     channel varchar(50) PRIMARY KEY,
     create_date DATE,
-    foreign key channel references channels(channel_link)
+    foreign key (channel) references channels(channel_link)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 create table follows (
